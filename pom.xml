@@ -118,6 +118,7 @@
                         <!-- Ensure plugin is spring powered -->
                         <Spring-Context>*</Spring-Context>
                     </instructions>
+<!--                    <jvmArgs>-Xmx2048m -Xms2048m -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true</jvmArgs>-->
                 </configuration>
             </plugin>
             <plugin>
@@ -133,6 +134,12 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <scannedDependencies>
+                        <dependency>
+                            <groupId>com.atlassian.plugin</groupId>
+                            <artifactId>atlassian-spring-scanner-external-jar</artifactId>
+                        </dependency>
+                    </scannedDependencies>
                     <verbose>false</verbose>
                 </configuration>
             </plugin>

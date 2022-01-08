@@ -7,18 +7,26 @@
         <param name="plugin-logo">images/pluginLogo.png</param>
     </plugin-info>
 
+    <xhtml-macro name="crowd-table-plugin" class="ru.marxunion.atlassian.crowdtab.plugin.ExampleMacro" key="crowd-table-plugin">
+<!--        <description key="crowd.macro.desc"/>-->
+        <category name="formatting"/>
+        <parameters>
+            <parameter name="groupName" type="string" required="true"/>
+        </parameters>
+    </xhtml-macro>
+
     <!-- add our i18n resource -->
     <resource type="i18n" name="i18n" location="crowd-table-plugin"/>
-    
+
     <!-- add our web resources -->
     <web-resource key="crowd-table-plugin-resources" name="crowd-table-plugin Web Resources">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
-        
+
         <resource type="download" name="crowd-table-plugin.css" location="/css/crowd-table-plugin.css"/>
         <resource type="download" name="crowd-table-plugin.js" location="/js/crowd-table-plugin.js"/>
         <resource type="download" name="images/" location="/images"/>
 
         <context>crowd-table-plugin</context>
     </web-resource>
-    
+
 </atlassian-plugin>
