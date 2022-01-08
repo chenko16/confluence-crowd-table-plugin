@@ -7,7 +7,7 @@
         <param name="plugin-logo">images/pluginLogo.png</param>
     </plugin-info>
 
-    <xhtml-macro name="crowd-table-plugin" class="ru.marxunion.atlassian.crowdtab.plugin.ExampleMacro" key="crowd-table-plugin">
+    <xhtml-macro name="crowd-table-plugin" class="ru.marxunion.atlassian.crowdtab.plugin.CrowdTableMacro" key="crowd-table-plugin">
 <!--        <description key="crowd.macro.desc"/>-->
         <category name="formatting"/>
         <parameters>

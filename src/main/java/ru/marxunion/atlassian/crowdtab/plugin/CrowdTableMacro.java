@@ -18,13 +18,13 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-public class ExampleMacro implements Macro {
+public class CrowdTableMacro implements Macro {
 
     private final CrowdService crowdService;
 
 
     @Autowired
-    public ExampleMacro(@ComponentImport CrowdService crowdService) {
+    public CrowdTableMacro(@ComponentImport CrowdService crowdService) {
         this.crowdService = crowdService;
     }
 
