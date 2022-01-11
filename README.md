@@ -1,4 +1,4 @@
-# marxists-union-conflu-plugin
+# confluence-crowd-table-plugin
 
 ### Плагин Confluence для отображения группы пользователей из Crowd на странице в виде таблицы
 
